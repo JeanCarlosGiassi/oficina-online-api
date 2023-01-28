@@ -18,7 +18,7 @@ public class FabricantePeca {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @Column(nullable = false, length = 100, unique = true)
-    private String fornecedor;
+    private String fabricante;
     @Column(name = "jdoc")
     private String jdocConfiguration;
     @CreationTimestamp
