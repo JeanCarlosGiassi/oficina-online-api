@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/oficina-online/oficina-online.iml" filepath="$PROJECT_DIR$/oficina-online/oficina-online.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/oficina-online-api.iml" filepath="$PROJECT_DIR$/.idea/oficina-online-api.iml" />
     </modules>
   </component>
