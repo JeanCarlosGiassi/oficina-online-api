@@ -1,7 +1,10 @@
+import LoginPage from "./pages/LoginPage";
+import HomePage from "./pages/HomePage";
+
 function App() {
   return (
     <div className="container">
-     <h1 className="title">Oficina Online</h1>
+     <LoginPage/>
     </div>
   );
 }
