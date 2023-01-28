@@ -38,7 +38,7 @@ public class FabricantePecaController {
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<FabricantePeca> putFabricantePecaById(@PathVariable (value = "id") Integer id, @RequestBody FabricantePeca fabricantePeca){
         log.info("Atualizando Fabricante de Peça com id [{}]", id);
-        return fabricantePecaService.updateTaskById(fabricantePeca, id);
+        return fabricantePecaService.updateFabricantePecaById(fabricantePeca, id);
     }
 
     @GetMapping("/fabricantes/peca/{id}")

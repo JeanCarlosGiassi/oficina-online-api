@@ -28,6 +28,4 @@ public class FabricantePeca {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
     private boolean enabled = true;
-    @OneToOne(mappedBy = "fabricantePeca")
-    private Peca pecaFabricante;
 }

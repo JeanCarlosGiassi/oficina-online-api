@@ -31,14 +31,12 @@ public class Peca {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
     private boolean enabled = true;
-    @Column(nullable = false)
+    @Column
     private BigDecimal valor;
-    @Column(nullable = false)
+    @Column
     private BigDecimal valorFabricante;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "fornecedor_id", referencedColumnName = "id")
+    @OneToOne
     private FornecedorPeca fornecedorPeca;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "fabricante_id", referencedColumnName = "id")
+    @OneToOne
     private FabricantePeca fabricantePeca;
 }

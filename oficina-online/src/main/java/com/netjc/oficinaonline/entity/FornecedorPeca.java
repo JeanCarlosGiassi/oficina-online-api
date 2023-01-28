@@ -10,7 +10,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "fornecedor")
+@Table(name = "fornecedor_peca")
 @Setter
 @Getter
 @ToString
@@ -29,6 +29,4 @@ public class FornecedorPeca {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
     private boolean enabled = true;
-    @OneToOne(mappedBy = "fornecedorPeca")
-    private Peca pecaFornecedor;
 }

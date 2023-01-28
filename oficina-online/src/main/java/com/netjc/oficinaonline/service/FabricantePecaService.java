@@ -30,7 +30,7 @@ public class FabricantePecaService {
                 }).orElse(ResponseEntity.notFound().build());
     }
 
-    public ResponseEntity<FabricantePeca> updateTaskById(FabricantePeca fabricante, Integer id){
+    public ResponseEntity<FabricantePeca> updateFabricantePecaById(FabricantePeca fabricante, Integer id){
         return fabricantePecaRepository.findById(id)
                 .map(fabricantePecaUpdate -> {
                     fabricantePecaUpdate.setFabricante(fabricante.getFabricante());
