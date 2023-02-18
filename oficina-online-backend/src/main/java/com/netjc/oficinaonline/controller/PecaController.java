@@ -4,6 +4,7 @@ import com.netjc.oficinaonline.entity.FabricantePeca;
 import com.netjc.oficinaonline.entity.Peca;
 import com.netjc.oficinaonline.service.FabricantePecaService;
 import com.netjc.oficinaonline.service.PecaService;
+import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -17,6 +18,7 @@ import java.util.Optional;
 @RequestMapping("/api/v1")
 @AllArgsConstructor
 @Slf4j
+@Api
 public class PecaController {
     PecaService pecaService;
 
